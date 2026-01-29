@@ -7,9 +7,10 @@ import store from './redux/store.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
+<BrowserRouter basename="/react-test">
+  <App />
+</BrowserRouter>
+
     </Provider>
   </StrictMode>,
 )
